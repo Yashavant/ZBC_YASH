@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Purchase Details</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOMM_PURCHASETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOMM_PURCHASE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFI_ACC</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>ZFI_ACC</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>LS_DATA</PARAMETER>
+       <TYP>ZFI_ACC</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>LV_STATUS</PARAMETER>
+       <TYP>MAKTX</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>LS_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Acc</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LV_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material description</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOMM_PURCHASE_ORDER_DEATILS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Purchase details</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_EBELN</PARAMETER>
+       <TYP>EBELN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>O_EKKO</PARAMETER>
+       <TYP>EKKO</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>O_EKPO</PARAMETER>
+       <DBSTRUCT>EKPO</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_EBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Purchasing Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>O_EKKO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Purchasing Document Header</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>O_EKPO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Purchasing Document Item</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZSD_ORDER_QTY_CHECK</FUNCNAME>
+     <SHORT_TEXT>Order Qty Check</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBELN_VA</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_QTY</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>I</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_QTY</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZSD_SO</FUNCNAME>
+     <SHORT_TEXT>Test</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAK-VBELN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_STRING</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR20</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales and Distribution Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_STRING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Char 20</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

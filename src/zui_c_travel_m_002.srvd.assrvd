@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service definition for travel'
+define service ZUI_C_TRAVEL_M_002 {
+  expose ZC_TRAVEL_M_002 as TravelProcessor;
+  expose I_Currency as Currency;
+  expose I_Country as Country;
+}

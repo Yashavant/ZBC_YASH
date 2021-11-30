@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SICF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <URL>/sap/bc/webdynpro/sap/ZBC_JAY_SEL_OPT/</URL>
+   <ICFSERVICE>
+    <ICF_NAME>ZBC_JAY_SEL_OPT</ICF_NAME>
+    <ORIG_NAME>ZBC_JAY_SEL_OPT</ORIG_NAME>
+   </ICFSERVICE>
+   <ICFDOCU>
+    <ICF_NAME>ZBC_JAY_SEL_OPT</ICF_NAME>
+    <ICF_LANGU>E</ICF_LANGU>
+    <ICF_DOCU>Select Options</ICF_DOCU>
+   </ICFDOCU>
+  </asx:values>
+ </asx:abap>
+</abapGit>
